@@ -8,7 +8,7 @@ print(y)
 # testing for conditions
 def divisible_by_three(n):
         for number in range(n):
-            if numbers%3==0:
+            if number%3==0:
               return "{} is divisible by 3".format(number)
         else:
          return "{} is not divisible by 3".format(number)
@@ -57,15 +57,17 @@ class Rectangle:
     def __init__(self,width,length):
         self.width=width
         self.length=length
-        return "My width is {} and my length is {}".format(self.width,self.length)
-
     def Area(self):
         area=self.width*self.length
         return "The area of this rectangle is {}".format(area)
 
     def perimeter(self):
-        perimeter=2(self.length+self.width)
+        perimeter=self.length+self.width+self.length+self.width
         return "The perimeter is of this rectangle is {}".format(perimeter)
+
+rectangle=Rectangle(10,20)
+print(rectangle.Area())
+print(rectangle.perimeter())
 
 
 
